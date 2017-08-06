@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Headline:</strong>
+  <%= @starter.headline %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @starter.author %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @starter.body %>
+</p>
+
+<p>
+  <strong>Pay:</strong>
+  <%= @starter.pay %>
+</p>
+
+<%= link_to 'Edit', edit_starter_path(@starter) %> |
+<%= link_to 'Back', starters_path %>

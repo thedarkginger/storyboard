@@ -1,0 +1,27 @@
+    <ul class="nav">
+       <% if subscriber_signed_in? %>
+          <%= link_to "Settings", edit_subscriber_registration_path %>
+          <%= link_to "Log Out", destroy_subscriber_session_path, method: :delete %>
+        <% else %>
+          <%= link_to "Sign Up", new_subscriber_registration_path %>
+        <%= link_to "Sign In", new_subscriber_session_path %>
+        <% end %>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+
+
+<h1>FearTheWave.com</h1>
+<p>Home for the blog posts.</p>
+
+
+<% @starters.each do |starter, index| %>
+    <h1><%= starter.headline %></h1>
+    <h3><%= starter.author %></h3>
+    <p><%= starter.body %></p>
+    <%= starter.pay %>
+<% end %> 
+
+<%= link_to "New Blog Post", starters_path %>
+
+
+
