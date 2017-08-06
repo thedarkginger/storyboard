@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+
+/* HOME PAGE */ 
+
+.center {
+	margin: auto;
+    width: 700px;
+}
+
+
